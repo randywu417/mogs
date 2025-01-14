@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --background: #ffffff;
+    --foreground: #0a0a0a;
+}
+
+body {
+    color: var(--foreground);
+    background: var(--background);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* 隱藏 Firefox 的數字輸入框箭頭 */
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+.text-hide {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: break-all;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
+
+.modalFrame {
+    @apply absolute p-8 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-sm border border-solid border-slate-200 bg-slate-50 flex flex-col gap-4;
+}

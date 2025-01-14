@@ -1,0 +1,7 @@
+*/node_modules
+*/coverage
+*/.next/
+
+/build
+
+.DS_Store
